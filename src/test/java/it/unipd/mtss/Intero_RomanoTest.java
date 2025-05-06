@@ -45,12 +45,20 @@ public class Intero_RomanoTest{
         assertEquals("XX", Intero_Romano.convert(20));
     }
 
-    // TEST DEI PRIMI VENTI NUMERI 
+    // TEST DEI PRIMI CIANQUANTA NUMERI 
     @Test
     public void TestPrimiCinquanta(){
         assertEquals("XXX", Intero_Romano.convert(30));
         assertEquals("XL", Intero_Romano.convert(40));
         assertEquals("L", Intero_Romano.convert(50));
+    }
+
+    // TEST DEI PRIMI CENTO NUMERI 
+    @Test
+    public void TestPrimiCento(){
+        assertEquals("LXX", Intero_Romano.convert(70));
+        assertEquals("XC", Intero_Romano.convert(90));
+        assertEquals("C", Intero_Romano.convert(100));
     }
 
     
