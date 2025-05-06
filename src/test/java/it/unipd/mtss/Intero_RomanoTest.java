@@ -2,3 +2,37 @@
 // RICCARDO BALDIN 2075548
 // ALDO TOFFOLI 2113202
 ////////////////////////////////////////////////////////////////////
+
+package it.unipd.mtss;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Intero_RomanoTest{
+    
+    // TEST DEI PRIMI TRE NUMERI
+    @Test
+    public void TestPrimiTre(){
+        assertEquals("I", Intero_Romano.convert(1));
+        assertEquals("II", Intero_Romano.convert(2));
+        assertEquals("III", Intero_Romano.convert(3));
+    }
+    
+    // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testZero(){
+        Intero_Romano.convert(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testPiuDiMille(){
+        Intero_Romano.convert(1001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativo(){
+        Intero_Romano.convert(-3);
+    }
+}
