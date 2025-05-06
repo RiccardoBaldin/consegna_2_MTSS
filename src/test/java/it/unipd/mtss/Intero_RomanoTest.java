@@ -26,6 +26,15 @@ public class Intero_RomanoTest{
         assertEquals("V", Intero_Romano.convert(5));
         assertEquals("VI", Intero_Romano.convert(6));
     }
+
+    // TEST DEI PRIMI DIECI NUMERI 
+    @Test
+    public void TestPrimiDieci(){
+        assertEquals("VII", Intero_Romano.convert(7));
+        assertEquals("VIII", Intero_Romano.convert(8));
+        assertEquals("IX", Intero_Romano.convert(9));
+        assertEquals("X", Intero_Romano.convert(10));
+    }
     
     // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
 
