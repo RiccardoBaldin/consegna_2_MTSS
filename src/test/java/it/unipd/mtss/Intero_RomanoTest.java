@@ -36,6 +36,15 @@ public class Intero_RomanoTest{
         assertEquals("X", Intero_Romano.convert(10));
     }
     
+
+    // TEST DEI PRIMI VENTI NUMERI 
+    @Test
+    public void TestPrimiVenti(){
+        assertEquals("XI", Intero_Romano.convert(11));
+        assertEquals("XII", Intero_Romano.convert(12));
+        assertEquals("XX", Intero_Romano.convert(20));
+    }
+
     // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
 
     @Test(expected = IllegalArgumentException.class)
