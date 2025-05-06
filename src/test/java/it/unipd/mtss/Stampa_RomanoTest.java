@@ -368,6 +368,7 @@ public class Stampa_RomanoTest {
 
         assertEquals(expected.toString(), Stampa_Romano.print(90));
     }   
+    
     public void testNumero100() {
         StringBuilder expected = new StringBuilder();
 
@@ -380,8 +381,58 @@ public class Stampa_RomanoTest {
         expected.append(" \n");
 
         assertEquals(expected.toString(), Stampa_Romano.print(100));
-    }   
+    }
 
-    
+    public void testNumero200() {
+        StringBuilder expected = new StringBuilder();
+
+
+        expected.append("* * * *\n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("* * * *\n");
+        expected.append(" \n");
+        expected.append("* * * *\n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("* * * *\n");
+        expected.append(" \n");
+
+        assertEquals(expected.toString(), Stampa_Romano.print(200));
+    }
+
+    public void testNumero350() {
+        StringBuilder expected = new StringBuilder();
+
+
+        expected.append("* * * *\n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("* * * *\n");
+        expected.append(" \n");
+        expected.append("* * * *\n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("* * * *\n");
+        expected.append(" \n");
+        expected.append("* * * *\n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("*      \n");
+        expected.append("* * * *\n");
+        expected.append(" \n");
+        expected.append("*       \n");
+        expected.append("*       \n");
+        expected.append("*       \n");
+        expected.append("*       \n");
+        expected.append("* * * * \n");
+        expected.append(" \n");
+
+        assertEquals(expected.toString(), Stampa_Romano.print(350));
+    }
     
 }

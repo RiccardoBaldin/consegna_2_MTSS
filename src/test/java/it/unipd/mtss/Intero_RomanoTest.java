@@ -61,6 +61,14 @@ public class Intero_RomanoTest{
         assertEquals("C", Intero_Romano.convert(100));
     }
 
+    // TEST DEI PRIMI CINQUECENTO NUMERI 
+    @Test
+    public void TestPrimiCinqueCento(){
+        assertEquals("CC", Intero_Romano.convert(200));
+        assertEquals("CCCL", Intero_Romano.convert(350));
+        assertEquals("D", Intero_Romano.convert(500));
+    }
+
     
     // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
 
