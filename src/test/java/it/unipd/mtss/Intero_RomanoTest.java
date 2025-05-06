@@ -21,7 +21,7 @@ public class Intero_RomanoTest{
 
      // TEST DEI PRIMI SEI NUMERI 
     @Test
-    public void TestPrimiTre(){
+    public void TestPrimiSei(){
         assertEquals("IV", Intero_Romano.convert(4));
         assertEquals("V", Intero_Romano.convert(5));
         assertEquals("VI", Intero_Romano.convert(6));

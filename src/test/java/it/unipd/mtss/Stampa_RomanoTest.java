@@ -62,7 +62,7 @@ public class Stampa_RomanoTest {
     }
 
     @Test
-    public void testNumero1() {
+    public void testNumero4() {
         StringBuilder expected = new StringBuilder();
         expected.append("***\n");
         expected.append(" * \n");
@@ -82,7 +82,7 @@ public class Stampa_RomanoTest {
 
 
     @Test
-    public void testNumero1() {
+    public void testNumero5() {
         StringBuilder expected = new StringBuilder();
         expected.append("*        *\n");
         expected.append(" *      * \n");
@@ -95,7 +95,7 @@ public class Stampa_RomanoTest {
     }
 
     @Test
-    public void testNumero1() {
+    public void testNumero6() {
         StringBuilder expected = new StringBuilder();
         expected.append("*        *\n");
         expected.append(" *      * \n");
