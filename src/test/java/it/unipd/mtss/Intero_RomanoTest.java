@@ -18,6 +18,14 @@ public class Intero_RomanoTest{
         assertEquals("II", Intero_Romano.convert(2));
         assertEquals("III", Intero_Romano.convert(3));
     }
+
+     // TEST DEI PRIMI SEI NUMERI 
+    @Test
+    public void TestPrimiTre(){
+        assertEquals("IV", Intero_Romano.convert(4));
+        assertEquals("V", Intero_Romano.convert(5));
+        assertEquals("VI", Intero_Romano.convert(6));
+    }
     
     // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
 
