@@ -447,12 +447,12 @@ public class Stampa_RomanoTest {
     public void testNumero600() {
         StringBuilder expected = new StringBuilder();
 
-        result.append("* * *   \n");
-        result.append("*     * \n");
-        result.append("*      *\n");
-        result.append("*     * \n");
-        result.append("* * *   \n");
-        result.append(" \n");
+        expected.append("* * *   \n");
+        expected.append("*     * \n");
+        expected.append("*      *\n");
+        expected.append("*     * \n");
+        expected.append("* * *   \n");
+        expected.append(" \n");
         expected.append("* * * *\n");
         expected.append("*      \n");
         expected.append("*      \n");
@@ -467,12 +467,12 @@ public class Stampa_RomanoTest {
     public void testNumero750() {
         StringBuilder expected = new StringBuilder();
 
-        result.append("* * *   \n");
-        result.append("*     * \n");
-        result.append("*      *\n");
-        result.append("*     * \n");
-        result.append("* * *   \n");
-        result.append(" \n");
+        expected.append("* * *   \n");
+        expected.append("*     * \n");
+        expected.append("*      *\n");
+        expected.append("*     * \n");
+        expected.append("* * *   \n");
+        expected.append(" \n");
         expected.append("* * * *\n");
         expected.append("*      \n");
         expected.append("*      \n");
@@ -499,12 +499,12 @@ public class Stampa_RomanoTest {
     public void testNumero1000() {
         StringBuilder expected = new StringBuilder();
 
-        result.append("*       *\n");
-        result.append("* *   * *\n");
-        result.append("*  * *  *\n");
-        result.append("*   *   *\n");
-        result.append("*       *\n");
-        result.append(" \n");
+        expected.append("*       *\n");
+        expected.append("* *   * *\n");
+        expected.append("*  * *  *\n");
+        expected.append("*   *   *\n");
+        expected.append("*       *\n");
+        expected.append(" \n");
 
         assertEquals(expected.toString(), Stampa_Romano.print(1000));
     }
