@@ -69,6 +69,14 @@ public class Intero_RomanoTest{
         assertEquals("D", Intero_Romano.convert(500));
     }
 
+    // TEST DEI PRIMI MILLE NUMERI 
+    @Test
+    public void TestPrimiMille(){
+        assertEquals("DC", Intero_Romano.convert(600));
+        assertEquals("DCCL", Intero_Romano.convert(750));
+        assertEquals("M", Intero_Romano.convert(1000));
+    }
+
     
     // TEST DI VALORI NON AMMESSI DALLA FUNZIONE
 
